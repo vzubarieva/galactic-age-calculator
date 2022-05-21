@@ -33,6 +33,6 @@ export default class PlanetYears {
   }
 
   getJupiterYearsToLive() {
-
+    return (this.averageLifeExpectancy - this.age) * 11.86;
   }
 }
