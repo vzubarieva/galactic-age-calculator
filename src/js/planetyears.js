@@ -3,4 +3,7 @@ export default class PlanetYears {
     this.age = age;
   }
 
+  getMercuryAge() {
+
+  }
 }
