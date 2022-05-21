@@ -40,4 +40,10 @@ describe("PlanerYears", () => {
     const planetYears = new PlanetYears(15, 73);
     expect(planetYears.getMarsYearsToLive()).toEqual(109.03999999999999);
   });
+
+  test("should correctly determine how many years left to live on Jupiter", () => {
+    const planetYears = new PlanetYears(15, 73);
+    expect(planetYears.getMarsYearsToLive()).toEqual(687.88);
+  });
+
 });
