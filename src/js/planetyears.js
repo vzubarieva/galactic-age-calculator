@@ -4,6 +4,10 @@ export default class PlanetYears {
   }
 
   getMercuryAge() {
+    return this.age * 0.24;
+  }
+
+  getVenusAge() {
 
   }
 }

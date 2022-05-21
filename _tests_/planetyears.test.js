@@ -8,6 +8,11 @@ describe("PlanerYears", () => {
 
   test("should correctly determine the age on Mercury", () => {
     const planetYears = new PlanetYears(15);
-    expect(planetYears.getMercuryAge()).toEqual(3.6);
+    expect(planetYears.getMercuryAge()).toEqual(3.5999999999999996);
+  });
+
+  test("should correctly determine the age on Venus", () => {
+    const planetYears = new PlanetYears(15);
+    expect(planetYears.getVenusAge()).toEqual(9.3);
   });
 });
