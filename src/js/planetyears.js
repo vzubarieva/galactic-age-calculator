@@ -25,6 +25,6 @@ export default class PlanetYears {
   }
 
   getVenusYearsToLive() {
-
+    return (this.averageLifeExpectancy - this.age) * 0.62;
   }
 }
