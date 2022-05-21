@@ -21,6 +21,6 @@ export default class PlanetYears {
   }
 
   getMercuryYearsToLive() {
-
+    return (this.averageLifeExpectancy - this.age) * 0.24;
   }
 }
