@@ -26,4 +26,8 @@ describe("PlanerYears", () => {
     expect(planetYears.getJupiterAge()).toEqual(177.89999999999998);
   });
 
+  test("should correctly determine how many years left to live on Mercury", () => {
+    const planetYears = new PlanetYears(15, 73);
+    expect(planetYears.getMercuryYearsToLive()).toEqual(13.92);
+  });
 });

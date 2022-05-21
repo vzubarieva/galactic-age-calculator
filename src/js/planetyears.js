@@ -1,6 +1,7 @@
 export default class PlanetYears {
-  constructor(age) {
+  constructor(age, averageLifeExpectancy) {
     this.age = age;
+    this.averageLifeExpectancy = averageLifeExpectancy;
   }
 
   getMercuryAge() {
@@ -17,5 +18,9 @@ export default class PlanetYears {
 
   getJupiterAge() {
     return this.age * 11.86;
+  }
+
+  getMercuryYearsToLive() {
+
   }
 }
