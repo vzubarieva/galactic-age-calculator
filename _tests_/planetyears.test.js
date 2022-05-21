@@ -15,4 +15,10 @@ describe("PlanerYears", () => {
     const planetYears = new PlanetYears(15);
     expect(planetYears.getVenusAge()).toEqual(9.3);
   });
+
+  test("should correctly determine the age on Mars", () => {
+    const planetYears = new PlanetYears(15);
+    expect(planetYears.getMarsAge()).toEqual(28.2);
+  });
+
 });
