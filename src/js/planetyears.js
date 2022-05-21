@@ -16,6 +16,6 @@ export default class PlanetYears {
   }
 
   getJupiterAge() {
-
+    return this.age * 11.86;
   }
 }

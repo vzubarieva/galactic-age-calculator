@@ -23,7 +23,7 @@ describe("PlanerYears", () => {
 
   test("should correctly determine the age on Jupiter", () => {
     const planetYears = new PlanetYears(15);
-    expect(planetYears.getJupiterAge()).toEqual(177.9);
+    expect(planetYears.getJupiterAge()).toEqual(177.89999999999998);
   });
 
 });
