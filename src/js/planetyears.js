@@ -1,6 +1,6 @@
 export default class PlanetYears {
-  constructor() {
-
+  constructor(age) {
+    this.age = age;
   }
 
 }
