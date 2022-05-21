@@ -29,6 +29,7 @@ export default class PlanetYears {
   }
 
   getMarsYearsToLive() {
+    return (this.averageLifeExpectancy - this.age) * 1.88;
 
   }
 }
