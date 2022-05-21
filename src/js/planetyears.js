@@ -8,6 +8,6 @@ export default class PlanetYears {
   }
 
   getVenusAge() {
-
+    return this.age * 0.62;
   }
 }
