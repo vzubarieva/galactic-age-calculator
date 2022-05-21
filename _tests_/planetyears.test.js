@@ -30,4 +30,9 @@ describe("PlanerYears", () => {
     const planetYears = new PlanetYears(15, 73);
     expect(planetYears.getMercuryYearsToLive()).toEqual(13.92);
   });
+
+  test("should correctly determine how many years left to live on Venus", () => {
+    const planetYears = new PlanetYears(15, 73);
+    expect(planetYears.getVenusYearsToLive()).toEqual(35.96);
+  });
 });
