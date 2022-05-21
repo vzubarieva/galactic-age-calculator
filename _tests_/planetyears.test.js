@@ -46,4 +46,24 @@ describe("PlanerYears", () => {
     expect(planetYears.getJupiterYearsToLive()).toEqual(687.88);
   });
 
+  test("should correctly determine how many years past the life expectancy on Mercury", () => {
+    const planetYears = new PlanetYears(73, 15);
+    expect(planetYears.getMercuryYearsToLive()).toEqual(13.92);
+  });
+
+  test("should correctly determine how many years past the life expectancy on Venus", () => {
+    const planetYears = new PlanetYears(73, 15);
+    expect(planetYears.getVenusYearsToLive()).toEqual(35.96);
+  });
+
+  test("should correctly determine how many years past the life expectancy on Mars", () => {
+    const planetYears = new PlanetYears(73, 15);
+    expect(planetYears.getMarsYearsToLive()).toEqual(109.03999999999999);
+  });
+
+  test("should correctly determine how many years past the life expectancy on Jupiter", () => {
+    const planetYears = new PlanetYears(73, 15);
+    expect(planetYears.getJupiterYearsToLive()).toEqual(687.88);
+  });
+
 });
