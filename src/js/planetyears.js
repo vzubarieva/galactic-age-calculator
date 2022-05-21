@@ -21,18 +21,18 @@ export default class PlanetYears {
   }
 
   getMercuryYearsToLive() {
-    return (this.averageLifeExpectancy - this.age) * 0.24;
+    return Math.abs((this.averageLifeExpectancy - this.age) * 0.24);
   }
 
   getVenusYearsToLive() {
-    return (this.averageLifeExpectancy - this.age) * 0.62;
+    return Math.abs((this.averageLifeExpectancy - this.age) * 0.62);
   }
 
   getMarsYearsToLive() {
-    return (this.averageLifeExpectancy - this.age) * 1.88;
+    return Math.abs((this.averageLifeExpectancy - this.age) * 1.88);
   }
 
   getJupiterYearsToLive() {
-    return (this.averageLifeExpectancy - this.age) * 11.86;
+    return Math.abs((this.averageLifeExpectancy - this.age) * 11.86);
   }
 }
