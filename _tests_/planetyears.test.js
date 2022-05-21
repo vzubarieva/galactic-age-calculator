@@ -21,4 +21,9 @@ describe("PlanerYears", () => {
     expect(planetYears.getMarsAge()).toEqual(28.2);
   });
 
+  test("should correctly determine the age on Jupiter", () => {
+    const planetYears = new PlanetYears(15);
+    expect(planetYears.getJupiterAge()).toEqual(177.9);
+  });
+
 });
