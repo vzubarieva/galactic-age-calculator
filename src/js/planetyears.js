@@ -12,6 +12,6 @@ export default class PlanetYears {
   }
 
   getMarsAge() {
-
+    return this.age * 1.88;
   }
 }
