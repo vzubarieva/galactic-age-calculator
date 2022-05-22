@@ -9,29 +9,65 @@
   <div class="jumbotron jumbotron-fluid">
     <div class="container">
       <h1 class="display-4">Super Galactic Age Calculator</h1>
-      <p class="lead">Are you interested how old are you if you was born on Mercury? Are you interested how long will
+      <p class="lead">Are you interested how old are you if you was born on Mercury? Or how long will
         you live on Jupiter?
-        Then you defenetly need to use galactic calculator to let more about it!</p>
+        Then you definitely need to use galactic calculator to learn more about it!</p>
       <form>
-        <div class="form-group">
-          <label for="InputAge">Type your age</label>
-          <input type="age" class="form-control" id="userAge" aria-describedby="age" placeholder="Enter age"
-            type="number">
+        <div class="mb-3 row">
+          <label for="InputAge" class="col-sm-6 col-form-label">Type your age</label>
+          <div class="col-sm-6">
+            <input class="form-control" id="userAge" aria-describedby="age" placeholder="Enter age" type="number">
+          </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1"> Type the average life expectancy according your demographic</label>
-          <input type="lifeExpectancy" class="form-control" id="InputLifeExpectansy" placeholder="lifeExpectansy"
-            type="number">
+        <div class="mb-3 row">
+          <label for="InputLifeExpectansy" class="col-sm-6 col-form-label"> Type the average life expectancy according
+            your demographic</label>
+          <div class="col-sm-6">
+            <input class="form-control" id="lifeExpectancy" placeholder="Life expectancy" type="number">
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary">Check it out</button>
+        <fieldset class="mb-3">
+          <div class="row">
+            <legend class="col-form-label col-sm-6 pt-0">Choose your planet</legend>
+            <div class="col-sm-6">
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="planetName" id="planetName1" value="Mercury" checked>
+                <label class="form-check-label" for="planetName1">
+                  Mercury
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="planetName" id="planetName2" value="Venus">
+                <label class="form-check-label" for="planetName2">
+                  Venus
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="planetName" id="planetName3" value="Mars">
+                <label class="form-check-label" for="planetName3">
+                  Mars
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="planetName" id="planetName4" value="Jupiter">
+                <label class="form-check-label" for="planetName4">
+                  Jupiter
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <div class="mb-3 row">
+          <div class="col-sm-6"></div>
+          <div class="col-sm-6">
+            <button type="submit" class="btn btn-primary">Check it out</button>
+          </div>
+        </div>
+
       </form>
+      <ul id="response"></ul>
     </div>
   </div>
-
-
-  <!-- <h2>Just type your age</h2> -->
-
-  <!-- template of img <img src="assets/images/stock-puppy-photo.jpg" alt="such a pup!"> -->
 </body>
 
 </html>
