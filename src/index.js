@@ -20,10 +20,7 @@ $(function () {
       return;
     }
 
-    // create instance of class
     let planetYears = new PlanetYears(age, lifeExpectancy);
-
-    // based on planet name call methods
     let planetAge = 0;
     let yearsToLive = 0;
     if (planetName === "Mercury") {
@@ -39,7 +36,6 @@ $(function () {
       planetAge = planetYears.getJupiterAge();
       yearsToLive = planetYears.getJupiterYearsToLive();
     }
-    // display the result
     $("#response").html("");
     $('#response').append(`<li>Your ${planetName} age is ${planetAge}</li>`);
     if (lifeExpectancy >= age) {
